@@ -9,3 +9,6 @@ This repository will contain mainfests, charts and configuration for enabling an
 3. Prometheus / Grafana for Metrics and Monitoring (for the above 2 as well as anything else we might deploy on a cluster)
 
 
+Commit with JIRA - https://jiraagiletest.emirates.dev/browse/TESTPROJ-107
+
+
