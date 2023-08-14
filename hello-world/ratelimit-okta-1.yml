@@ -1,0 +1,12 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  namespace: app-1
+  name: rate-limit-1
+config: 
+  second: 2
+  hour: 1000
+  policy: local
+  limit_by: header
+  header_name: X_CONSUMER_USERNAME
+plugin: rate-limiting

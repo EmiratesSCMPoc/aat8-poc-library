@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-world
+  namespace: app-1
+  labels:
+    app: hello-world
+  annotations:
+    konghq.com/plugins: request-transformer-service
+spec:
+  ports:
+  - port: 80
+    targetPort: 8080
+    protocol: TCP
+    
+  selector:
+    app: test-hello-world

@@ -1,0 +1,11 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongConsumer
+metadata:
+  name: okta-consumer-1
+  namespace: app-1
+  annotations:
+    kubernetes.io/ingress.class: kong
+    konghq.com/plugins: rate-limit-1
+username: 0oa3qq0c14fAEnIys5d7
+credentials:
+  - okta-dev-public-key

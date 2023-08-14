@@ -1,0 +1,13 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: jwt-test
+  namespace: app-1
+config: 
+  key_claim_name: iss
+  claims_to_verify:
+    - exp
+  secret_is_base64: false
+  run_on_preflight: false
+plugin: jwt
+

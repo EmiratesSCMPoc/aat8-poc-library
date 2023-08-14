@@ -1,0 +1,14 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongClusterPlugin
+metadata:
+  name: jwt-cluster
+  annotations:
+    kubernetes.io/ingress.class: kong
+config: 
+  key_claim_name: cid
+  claims_to_verify:
+    - exp
+  secret_is_base64: false
+  run_on_preflight: false
+plugin: jwt
+

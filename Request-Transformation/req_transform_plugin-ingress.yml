@@ -1,0 +1,13 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: request-transformer-ingress
+config: 
+  
+  add:
+    headers:
+    - x-new-header:test-ingress
+    - x-another-header:new-test-ingress
+  
+plugin: request-transformer
+

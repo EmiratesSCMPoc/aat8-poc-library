@@ -1,0 +1,20 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: helloworld-ingress
+  namespace: app-2
+  annotations:
+    kubernetes.io/ingress.class: kong
+spec:
+  rules:
+  - host: hello-world.8.7x.ax
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: hello-world2
+            port:
+              number: 80
+      

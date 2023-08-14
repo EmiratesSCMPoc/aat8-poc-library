@@ -1,0 +1,23 @@
+# Deployment
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world2
+  namespace: app-2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-world2
+  template:
+    metadata:
+      labels:
+        app: hello-world2
+    spec:
+      containers:
+        - name: hello-world2
+          image: koundinyavakkantham/hello-world
+          ports:
+            - containerPort: 8080
+              protocol: TCP

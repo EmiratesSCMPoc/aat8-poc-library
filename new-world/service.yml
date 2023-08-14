@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: new-world
+  namespace: app-2
+  labels:
+    app: new-world
+  annotations:
+    konghq.com/plugins: rate-limit-test
+spec:
+  ports:
+  - port: 80
+    targetPort: 8080
+    protocol: TCP
+    
+  selector:
+    app: test-new-world

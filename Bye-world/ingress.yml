@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: byeworld-ingress
+  namespace: app-1
+  annotations:
+    kubernetes.io/ingress.class: kong
+spec:
+  rules:
+  - host: bye-world.8.7x.ax
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: bye-world
+            port:
+              number: 80

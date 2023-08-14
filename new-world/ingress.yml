@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: newworld-ingress
+  namespace: app-2
+  annotations:
+    kubernetes.io/ingress.class: kong
+spec:
+  rules:
+  - host: new-world.8.7x.ax
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: new-world
+            port:
+              number: 80

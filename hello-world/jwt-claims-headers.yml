@@ -1,0 +1,12 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: jwt-claims-header
+  namespace: app-1
+  annotations:
+    kubernetes.io/ingress.class: kong
+config: 
+  uri_param_names: jwt
+  claims_to_include: .*
+  continue_on_error: true
+plugin: jwt-claims-headers
