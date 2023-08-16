@@ -11,6 +11,9 @@ This repository will contain mainfests, charts and configuration for enabling an
 
 Commit with JIRA - https://jiraagiletest.emirates.dev/browse/TESTPROJ-107
 
+<<<<<<< HEAD
 Checking with the GITHub integration with JIRA. - KAN-1
 
+=======
+>>>>>>> parent of 37573b9 (TESTPROJ-108 New Branch)
 
