@@ -11,9 +11,7 @@ This repository will contain mainfests, charts and configuration for enabling an
 
 Commit with JIRA - https://jiraagiletest.emirates.dev/browse/TESTPROJ-107
 
-<<<<<<< HEAD
-Checking with the GITHub integration with JIRA. - KAN-1
-
-=======
->>>>>>> parent of 37573b9 (TESTPROJ-108 New Branch)
+GitHub, Inc. is a platform and cloud-based service for software development and version control using Git, allowing developers to store and manage their code. 
+It provides the distributed version control of Git plus access control, bug tracking, software feature requests, task management, 
+continuous integration, and wikis for every project. Headquartered in California,
 
