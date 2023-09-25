@@ -13,4 +13,6 @@ Commit with JIRA - https://jiraagiletest.emirates.dev/browse/TESTPROJ-107
 
 Checking with the GITHub integration with JIRA. - KAN-1
 
+Adding new line to update the file.
+
 
